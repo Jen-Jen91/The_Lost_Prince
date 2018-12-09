@@ -48,13 +48,12 @@ PlayerView.prototype.roomContent = function () {
 
 
     content = event.detail;
-    console.log(content,"this is your content Player view")
+    console.log(content,"Content (in Player view)")
 
 
     attack = document.querySelector('#playerStatsAttack')
     heals = document.querySelector('#playerStatsHeals')
     health = document.querySelector('#playerStatsHp')
-
 
 
     if (content == "upgrade") {

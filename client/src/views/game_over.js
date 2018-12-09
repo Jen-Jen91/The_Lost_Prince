@@ -5,9 +5,7 @@ const GameOver = function () {
   this.container = document.querySelector("div#text-display");
 };
 
-
 GameOver.prototype.playerDied = function () {
-
   this.container.innerHTML = "";
 
   const gameOver = document.createElement("h1");

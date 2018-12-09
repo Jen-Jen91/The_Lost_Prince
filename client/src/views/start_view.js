@@ -5,7 +5,6 @@ const StartView = function (container) {
   this.container = container;
 };
 
-
 StartView.prototype.bindEvents = function () {
 
   this.createButtons();
@@ -29,10 +28,7 @@ StartView.prototype.bindEvents = function () {
     background.setAttribute("name", "mansion");
     PubSub.publish('StartView:choice-button-clicked', "mansion");
   });
-
-
 };
-
 
 StartView.prototype.createButtons = function () {
   this.container.innerHTML = "";

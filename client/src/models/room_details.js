@@ -1,7 +1,6 @@
 const PubSub = require('../helpers/pub_sub.js');
 
 const RoomDetails = function () {
-
 };
 
 const forestRooms = [

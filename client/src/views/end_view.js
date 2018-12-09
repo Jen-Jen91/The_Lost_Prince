@@ -1,15 +1,11 @@
 const PubSub = require('../helpers/pub_sub.js');
-// const TextView = require('./text_view.js');
 
 const EndView = function (container) {
   this.container = container;
 };
 
-
 EndView.prototype.bindEvents = function () {
-
   PubSub.subscribe('PointsTracker:end-point-reached', (event)=> {
-    console.log("$$$$$$$$$$$$$$$$$");
     this.container.innerHTML = "";
 
     const end = document.createElement("h2");
@@ -26,9 +22,6 @@ EndView.prototype.bindEvents = function () {
 
 
 EndView.prototype.disableButtons = function () {
-
-  // const textView = new TextView(this.container);
-  // textView.disableNavigation();
 
   const leftButton = document.getElementById('nav-left-btn');
   const rightButton = document.getElementById('nav-right-btn');
@@ -55,8 +48,6 @@ EndView.prototype.disableButtons = function () {
   monster.innerHTML = ""
   const playerhealthbar = document.querySelector("div#player-health-bar")
   playerhealthbar.innerHTML = ""
-  
-
 };
 
 

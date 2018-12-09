@@ -68,8 +68,6 @@ Fight.prototype.playerAttack = function (monster){
 Fight.prototype.monsterAttack = function (monster) {
   //monster declaration
 
-
-
   //Dice Roll Values Per Attack
   if (monster != null){
     const monsterName = monster.name;

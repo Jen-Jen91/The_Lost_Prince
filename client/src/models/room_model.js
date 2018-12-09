@@ -5,12 +5,11 @@ const RoomGenerator = function(){};
 
 RoomGenerator.prototype.bindEvents = function(){
   var counter = 0
-  // Listen for a direction button to be clicked. Makes no difference, really
+  // Listen for a direction button to be clicked
   PubSub.subscribe('DirectionButton:direction-clicked',(evt)=>{
-    // Randomise what the room contains
 
+    // Randomise what the room contains
     var content_select_random = Math.floor(Math.random()*4);
-    // console.log('Contents: ',content_select_random);
 
     var content_select = '';
 
@@ -27,7 +26,7 @@ RoomGenerator.prototype.bindEvents = function(){
     var exit_right = Math.floor(Math.random()*2);
     var exit_forward = Math.floor(Math.random()*2);
 
-    // If it stupidly generates no exits, automatically create one ahead of you
+    // If it generates no exits, automatically create one ahead of you
     if (exit_left == 0 && exit_right == 0 && exit_forward == 0){
       exit_forward = 1;
     }
@@ -49,7 +48,5 @@ RoomGenerator.prototype.bindEvents = function(){
   });
 
 };
-
-
 
 module.exports = RoomGenerator;

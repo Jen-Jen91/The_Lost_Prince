@@ -7,9 +7,7 @@ const StartView = require('./views/start_view.js');
 const EndView = require('./views/end_view.js');
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  console.log("Hey! Hey you! Have a nice day! x DOMContentLoaded");
-  // const choice = 1
-  // PubSub.publish('Monster:monster-choice',choice);
+  console.log("DOMContentLoaded");
 
   const startContainer = document.querySelector("div#options");
   const startView = new StartView(startContainer);
