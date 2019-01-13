@@ -8,7 +8,7 @@ We followed the Agile methodology to work well as a team and created the project
 
 * In the terminal, enter the following commands to run the JavaScript code and open the browser:
     1) *npm install*
-    2) *npm run build*
+    2) *npm run build* (keep this running and open another tab)
     3) *open client/public/index.html*
 
 
